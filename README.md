@@ -1,15 +1,14 @@
 # horse-race-times-ml
-Machine Learning project exploring variables in horse racing.
-
-# horse-race-times-ml
 This project predicts horse racing finishing times using a cleaned and engineered dataset derived from Raceform data. I used exploratory data analysis, feature engineering, and a range of machine learning models to understand which factors contribute most to variation in race outcomes. This repository contains all work completed for the Machine Learning (Fall 2025) capstone.
 
 # Repository Structure
-01_exploration.ipynb – Data cleaning, feature engineering, and exploratory data analysis
-modeling.ipynb – Full modeling pipeline, experiments, model comparison, and results
-rf_model.pkl – Saved Random Forest model
-requirements.txt – Project dependencies
-README.md – Project documentation
+Install the required packages with:
+pip install -r requirements.txt
+The requirements file contains:
+pandas
+numpy
+...
+
 
 # Data Source
 The dataset used in this project is raceform_small.csv, stored in the repository under the data folder. It contains approximately 50,000 horse races with variables including:
@@ -35,7 +34,7 @@ Several preprocessing steps were applied:
 The modeling notebook compares six supervised learning models:
 1. Linear Regression
 2. Ridge Regression
-3.Lasso Regression
+3. Lasso Regression
 4. k-Nearest Neighbors
 5. Random Forest
 6. Gradient Boosting Regressor
@@ -52,10 +51,17 @@ The Random Forest model is saved as rf_model.pkl.
 Open and run all cells in 01_exploration.ipynb. This notebook handles initial cleaning and exploratory analysis.
 Open and run all cells in modeling.ipynb. This notebook runs the full modeling pipeline, generates comparison tables and plots, and saves the final model.
 
-# Requirements
+## Requirements
+
 Install the required packages with:
+
+```
 pip install -r requirements.txt
+```
+
 The requirements file contains:
+
+```
 pandas
 numpy
 matplotlib
@@ -63,6 +69,8 @@ seaborn
 scikit-learn
 joblib
 shap
+```
+
 
 # Notes
 All preprocessing is handled with a single ColumnTransformer for numeric and categorical variables. The experiments are reproducible and meet the capstone expectations for modeling depth, analysis, and documentation.
