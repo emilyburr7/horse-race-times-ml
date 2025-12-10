@@ -22,8 +22,6 @@ The dataset used in this project is raceform_small.csv, stored in the repository
 - age  
 - time  
 - course  
-- jockey and trainer  
-- performance metrics such as OR, RPR, and ts  
 
 ## Feature Engineering
 
@@ -34,7 +32,7 @@ Several preprocessing steps were applied:
 - `weight_to_lbs`: converts weight from stones-pounds format into total pounds  
 - columns with high missingness were dropped  
 - the final modeling dataset includes distance_f, age, weight_lbs, going, and course  
-- the target variable is `ts` (Timeform speed rating)
+- the primary target variable is finishing time (seconds), with pace (seconds per furlong) evaluated as a secondary target.
 
 ## Machine Learning Models
 
@@ -49,8 +47,8 @@ The modeling notebook compares six supervised learning models:
 
 Additional experiments include:
 
-- a baseline mean-target predictor  
-- 3-fold cross-validation on a sample of the training data  
+- a baseline mean finishing-time predictoor  
+- 5-fold GroupKFold cross-validation grouped by race_id 
 - evaluation on a held-out test set  
 - an ablation study comparing different feature subsets  
 - a robustness check for short, medium, and long race distances  
