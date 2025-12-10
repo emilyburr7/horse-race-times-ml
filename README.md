@@ -5,12 +5,17 @@ This project predicts horse racing finishing times using a cleaned and engineere
 ## Repository Structure
 
 ```
-01_exploration.ipynb     – Data cleaning, feature engineering, and exploratory data analysis
-modeling.ipynb           – Full modeling pipeline, experiments, model comparison, and results
-rf_model.pkl             – Saved Random Forest model
-requirements.txt         – Project dependencies
-README.md                – Project documentation
+notebooks/01_exploration.ipynb     – Data cleaning, feature engineering, and exploratory data analysis
+notebooks/02_modeling.ipynb        – Results and Analysis
+modeling.ipynb                     – Full modeling pipeline, experiments, model comparison, and results
+rf_model.pkl                       – Saved Random Forest model
+requirements.txt                   – Project dependencies
+README.md                          – Project documentation
 ```
+Run the notebooks in order:
+
+1. notebooks/01_exploration.ipynb  
+2. notebooks/02_modeling.ipynb  
 
 ## Data Source
 
