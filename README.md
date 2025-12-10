@@ -12,10 +12,6 @@ rf_model.pkl                       – Saved Random Forest model
 requirements.txt                   – Project dependencies
 README.md                          – Project documentation
 ```
-Run the notebooks in order:
-
-1. notebooks/01_exploration.ipynb  
-2. notebooks/02_modeling.ipynb  
 
 ## Data Source
 
@@ -67,8 +63,8 @@ rf_model.pkl
 
 ## How to Run
 
-1. Open and run all cells in `01_exploration.ipynb`. This notebook handles initial cleaning and exploratory analysis.  
-2. Open and run all cells in `modeling.ipynb`. This notebook runs the full modeling pipeline, generates comparison tables and plots, and saves the final model.
+1. Open and run all cells in `notebooks/01_exploration.ipynb  `. This notebook handles initial cleaning and exploratory analysis.  
+2. Open and run all cells in `notebooks/02_modeling.ipynb `. This notebook runs the full modeling pipeline, generates comparison tables and plots, and saves the final model.
 
 ## Requirements
 
