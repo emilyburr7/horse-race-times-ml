@@ -57,7 +57,7 @@ Additional experiments include:
 The Random Forest model is saved as:
 
 ```
-models/rf_model_small.pkl
+rf_model.pkl
 ```
 
 ## How to Run
